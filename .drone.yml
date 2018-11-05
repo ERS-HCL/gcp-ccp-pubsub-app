@@ -1,0 +1,12 @@
+pipeline:
+    javaBuild:
+      image: maven:3.5.4-jdk-8
+      commands:
+        - mvn clean
+        - mvn package -Dcheckstyle.skip
+    dockerizeAndPushToDockerHub:
+      image: plugins/docker
+      repo: jbeginsamuel/demo-app
+      username: jbeginsamuel
+      password: xxxxxxxxxx
+      tags: ver21
