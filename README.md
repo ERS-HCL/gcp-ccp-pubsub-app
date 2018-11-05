@@ -15,9 +15,7 @@ This is a working sample for building Java/J2EE   for building  spring Boot app 
 
 # How to test this application
 ```bash
-* Standlone: java -jar target/hybrid-gcp-ccp-app-0.1.0.jar
-* Docker: docker run  -p 8080:80 -name hybrid-gcp-ccp-app    jbeginsamuel/demo-app:ver10
-* Kubernets: kubectl apply -f hybrid-app-using-gcp-broker.yaml
+curl -d '{"customerID":"ABC-1891","State_":"NY","gender":"M"," SeniorCitizen":0,"Partner":true,"Dependents":true} ' -H "Content-Type: application/json" -X POST http://localhost:8080/publish
 ```
 
 # GCP PubSub app pre-requisite/Dependency for Kubernets deployment
