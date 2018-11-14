@@ -15,7 +15,7 @@ This is a working sample for building Java/J2EE   for building  spring Boot app 
 
 # How to test this application
 ```bash
-curl -d '{"customerID":"ABC-1891","State_":"NY","gender":"M"," SeniorCitizen":0,"Partner":true,"Dependents":true} ' -H "Content-Type: application/json" -X POST http://localhost:8080/publish
+curl -d '{"customerID":"ABC-1891","State_":"NY","gender":"M"," SeniorCitizen":0,"Partner":true,"Dependents":true} ' -H "Content-Type: application/json" -X POST http://localhost:8080/publish/
 ```
 Response
 ```bash
