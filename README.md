@@ -17,6 +17,12 @@ This is a working sample for building Java/J2EE   for building  spring Boot app 
 ```bash
 curl -d '{"customerID":"ABC-1891","State_":"NY","gender":"M"," SeniorCitizen":0,"Partner":true,"Dependents":true} ' -H "Content-Type: application/json" -X POST http://localhost:8080/publish
 ```
+Response
+```bash
+{
+ "status" : "ok"
+}
+```
 
 # GCP PubSub app pre-requisite/Dependency for Kubernets deployment
 
