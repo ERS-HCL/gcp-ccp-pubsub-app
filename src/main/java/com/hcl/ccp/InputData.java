@@ -11,8 +11,8 @@ public class InputData implements Serializable {
 
     @JsonProperty("customerID")
     private String customerID;
-    @JsonProperty("State_")
-    private String State_;
+    @JsonProperty(" State__")
+    private String  State__;
     @JsonProperty("gender")
     private String gender;
     @JsonProperty("SeniorCitizen")
@@ -36,17 +36,17 @@ public class InputData implements Serializable {
     @JsonProperty("TypeOfInternetService")
     private String TypeOfInternetService;
     @JsonProperty("OnlineSecurity")
-    private String OnlineSecurity;
+    private boolean OnlineSecurity;
     @JsonProperty("OnlineBackup")
-    private String OnlineBackup;
+    private boolean OnlineBackup;
     @JsonProperty("DeviceProtection")
-    private String DeviceProtection;
+    private boolean DeviceProtection;
     @JsonProperty("TechSupport")
-    private String TechSupport;
+    private boolean TechSupport;
     @JsonProperty("HDStreamingServc")
-    private String HDStreamingServc;
+    private boolean HDStreamingServc;
     @JsonProperty("_4KStreamingServc")
-    private String _4KStreamingServc;
+    private boolean _4KStreamingServc;
     @JsonProperty("Contract")
     private String Contract;
     @JsonProperty("SeviceQualityFdback")
@@ -58,7 +58,7 @@ public class InputData implements Serializable {
     @JsonProperty("MonthlyCharges")
     private double MonthlyCharges;
     @JsonProperty("TotalCharges")
-    private String TotalCharges;
+    private float TotalCharges;
     @JsonProperty("Churn")
     private boolean Churn;
 
